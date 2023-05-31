@@ -3,7 +3,7 @@ import Btn from 'components/FeebackOptions/FeedbackOptions.styled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return options.map(el => (
-    <Btn key={Math.random()} onClick={onLeaveFeedback}>
+    <Btn key={el} onClick={onLeaveFeedback}>
       {el}
     </Btn>
   ));
