@@ -1,3 +1,5 @@
+import Feedback from 'components/Feedback';
+import Section from 'components/Section';
 export const App = () => {
   return (
     <div
@@ -7,10 +9,12 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      <Section title="Please leave feedback">
+        <Feedback options={['good', 'neutral', 'bad']} />
+      </Section>
     </div>
   );
 };
